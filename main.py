@@ -6,6 +6,10 @@ import pytz
 from datetime import datetime
 from pydantic import BaseModel
 from typing import Optional
+from modules.birth_chart import calculate_birth_chart, calculate_rashi
+from modules.kundli import calculate_kundli_match
+from modules.lunar import calculate_lunar_month, check_special_days
+from modules.muhurta import calculate_disha_shool
 
 app = FastAPI()
 
